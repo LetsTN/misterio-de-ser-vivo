@@ -1,0 +1,130 @@
+#about {
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+}
+
+#about .text a {
+    color: var(--color-secondary-2);
+    text-decoration: none;
+}
+
+#about .text b {
+    color: var(--color-secondary-2);
+}
+
+#about .title {
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-size: 36px;
+    color: var(--color-secondary-1);
+}
+
+#about .text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 24px;
+    font-size: 1.2rem;
+
+    color: var(--color-neutral-0);
+}
+
+
+#about .text img {
+    max-width: 100%;
+}
+
+.grid-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    margin-top: 24px;
+}
+
+.grid-center .contribute-button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-center .contribute-button a {
+    color: var(--color-neutral-1);
+    text-decoration: none;
+}
+
+#about .grid-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: fit-content;
+    max-height: 550px;
+}
+
+#about .grid-right img {
+    max-height: 50%;
+}
+
+#about .grid-right .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+
+    min-height: fit-content;
+    max-height: 28rem;
+}
+
+#about .grid-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: fit-content;
+    max-height: 550px;
+}
+
+#about .grid-left img {
+    max-height: 50%;
+}
+
+#about .grid-left .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    min-height: fit-content;
+    max-height: 28rem;
+}
+
+@media screen and (max-width: 1170px) {
+    #about .grid-right {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    #about .grid-right .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #about .grid-left {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    #about .grid-left .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+}

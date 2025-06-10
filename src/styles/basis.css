@@ -1,0 +1,58 @@
+#basis {
+    padding-top: 36px;
+}
+
+#basis .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: fit-content;
+    max-height: 550px;
+}
+
+#basis .grid .image {
+    max-height: 50%;
+}
+
+#basis .grid img {
+    max-height: 100%;
+}
+
+#basis .grid .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+
+    min-height: fit-content;
+    max-height: 28rem;
+
+
+    padding-top: 24px;
+    gap: 24px;
+    font-size: 1.2rem;
+
+    color: var(--color-neutral-0);
+}
+
+#basis .grid .text .title {
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-size: 36px;
+    color: var(--color-secondary-1);
+}
+
+@media screen and (max-width: 1170px) {
+    #basis .grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    #basis .grid .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+
+    }
+}

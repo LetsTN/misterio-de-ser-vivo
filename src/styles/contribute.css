@@ -1,0 +1,39 @@
+#contribute {
+    padding-top: 36px;
+}
+
+#contribute .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    min-height: fit-content;
+    max-height: 28rem;
+
+
+    padding-top: 24px;
+    gap: 24px;
+    font-size: 1.2rem;
+
+    color: var(--color-neutral-0);
+}
+
+#contribute .text .title {
+    font-family: "Font Awesome 6 Free", sans-serif;
+    font-size: 36px;
+    color: var(--color-secondary-1);
+}
+
+#contribute .text a {
+    color: var(--color-secondary-2);
+    text-decoration: none;
+}
+
+#contribute .text b {
+    color: var(--color-secondary-2);
+}
+
+img {
+    max-width: 10rem;
+}

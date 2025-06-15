@@ -47,22 +47,27 @@
 }
 
 @media screen and (max-width: 1170px) {
-
     #basis .grid {
         display: flex;
         flex-direction: column-reverse;
         max-height: fit-content;
-        gap: 24px;
+        gap: 16px;
     }
 
     #basis .grid .text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: justify;
+        text-align: start;
+        gap: 16px;
+        font-size: 1rem;
     }
 
     #basis img {
         max-width: 100%;
+    }
+
+    #basis .grid .text .title {
+        font-size: 2rem;
     }
 }

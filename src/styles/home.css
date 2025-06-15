@@ -76,3 +76,17 @@
         margin-top: 16px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    #home {
+        padding: 0;
+    }
+
+    #cta .title {
+        font-size: 2rem;
+    }
+
+    #cta .description {
+        font-size: 1rem;
+    }
+}

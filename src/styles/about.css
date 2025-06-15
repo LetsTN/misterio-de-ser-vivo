@@ -16,9 +16,7 @@
 }
 
 #about .title {
-    font-family: "Font Awesome 6 Free", sans-serif;
     font-size: 36px;
-    color: var(--color-secondary-1);
 }
 
 #about .text {
@@ -104,7 +102,12 @@
     #about .grid-right {
         display: flex;
         flex-direction: column-reverse;
+        max-height: fit-content;
         gap: 24px;
+    }
+
+    #about img {
+        max-width: 100%;
     }
 
     #about .grid-right .text {
@@ -116,7 +119,8 @@
 
     #about .grid-left {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        max-height: fit-content;
         gap: 24px;
     }
 

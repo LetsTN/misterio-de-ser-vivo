@@ -1,5 +1,12 @@
+
 #basis {
-    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+#basis p {
+    color: var(--color-neutral-0);
+    margin-bottom: 24px;
 }
 
 #basis .grid {
@@ -36,15 +43,15 @@
 }
 
 #basis .grid .text .title {
-    font-family: "Font Awesome 6 Free", sans-serif;
     font-size: 36px;
-    color: var(--color-secondary-1);
 }
 
 @media screen and (max-width: 1170px) {
+
     #basis .grid {
         display: flex;
         flex-direction: column-reverse;
+        max-height: fit-content;
         gap: 24px;
     }
 
@@ -53,6 +60,9 @@
         flex-direction: column;
         justify-content: center;
         text-align: justify;
+    }
 
+    #basis img {
+        max-width: 100%;
     }
 }

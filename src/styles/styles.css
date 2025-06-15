@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('header.css');
 @import url('home.css');
 @import url('basis.css');
@@ -26,6 +26,13 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--color-secondary-2);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -35,7 +42,11 @@ body {
 }
 
 section {
-    padding: 28px 8%;
+    padding: 0 8%;
+}
+
+img {
+    border-radius: 8px;
 }
 
 .btn-default {
@@ -55,36 +66,3 @@ section {
 .btn-default:hover {
     background-color: var(--color-secondary-2);
 }
-
-.social-media-buttons {
-    display: flex;
-    gap: 18px;
-}
-
-.social-media-buttons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 40px;
-    background-color: var(--color-neutral-0);
-    font-size: 1.25rem;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--color-neutral-1);;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow .3s ease;
-}
-
-.social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
-}
-
-.section-title {
-    color: var(--color-primary-6);
-    font-size: 1.563rem;
-}
-
-.section-subtitle {
-    font-size: 2.1875rem;
-} 

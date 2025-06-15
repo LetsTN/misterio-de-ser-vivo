@@ -20,9 +20,7 @@
 }
 
 #contribute .text .title {
-    font-family: "Font Awesome 6 Free", sans-serif;
     font-size: 36px;
-    color: var(--color-secondary-1);
 }
 
 #contribute .text a {
